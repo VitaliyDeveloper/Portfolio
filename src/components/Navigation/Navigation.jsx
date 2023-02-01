@@ -3,6 +3,9 @@ import {
   NavList,
   NavItem,
   NavLinkStyle,
+  Link,
+  Dot1,
+  Dot2,
 } from './Navigation.styled';
 
 const Navigation = () => {
@@ -19,6 +22,16 @@ const Navigation = () => {
           <NavLinkStyle to="/portfolio">Portfolio</NavLinkStyle>
         </NavItem>
       </NavList>
+      <NavList>
+        <NavItem>
+          <Link href="">GitHub</Link>
+        </NavItem>
+        <NavItem>
+          <Link href="">Linkedin</Link>
+        </NavItem>
+      </NavList>
+      <Dot1></Dot1>
+      <Dot2></Dot2>
     </NavigalionContainer>
   );
 };

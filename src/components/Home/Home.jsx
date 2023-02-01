@@ -1,14 +1,26 @@
+import {
+  HomeContainer,
+  TitleContainer,
+  TitleName,
+  TitleSurname,
+  Button,
+} from './Home.styled';
+
 const Home = () => {
   return (
-    <div>
-      <h1>Vitaliy Gerassimov</h1>
+    <HomeContainer>
+      <TitleContainer>
+        <TitleName>Vitaliy</TitleName>
+        <TitleSurname>Gerassimov</TitleSurname>
+      </TitleContainer>
+
       <ul>
         <li>sd</li>
         <li>ddsdf</li>
         <li>aasfasf</li>
       </ul>
-      <button>sdsd</button>
-    </div>
+      <Button>Let's go</Button>
+    </HomeContainer>
   );
 };
 

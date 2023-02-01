@@ -1,6 +1,8 @@
 @import-normalize;
 /* bring in normalize.css styles */
 
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
 :root {
   --yellow-color: #F4E500;
   --red-color: #E32322;
@@ -10,6 +12,8 @@
 
 body {
   margin: 0;
+  background-color: var(--base-black);
+
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

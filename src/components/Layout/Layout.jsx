@@ -1,6 +1,9 @@
-import Navigation from 'components/Navigation/Navigation';
-import Footer from 'components/Footer/Footer';
 import { Outlet } from 'react-router-dom';
+
+//COMPONENTS////////////////////////////
+import Navigation from 'components/Navigation/Navigation';
+import { Main } from './Layuout.styled';
+import Footer from 'components/Footer/Footer';
 
 const Layout = () => {
   return (
@@ -8,9 +11,9 @@ const Layout = () => {
       <header>
         <Navigation />
       </header>
-      <main>
+      <Main>
         <Outlet />
-      </main>
+      </Main>
       <footer>
         <Footer />
       </footer>
