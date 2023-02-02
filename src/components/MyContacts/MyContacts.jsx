@@ -1,9 +1,26 @@
+import {
+  ContactContainer,
+  TitleContainer,
+  Title,
+  Wrapper,
+  Contact,
+} from './MyContacts.styled';
+
 const MyContacts = () => {
   return (
-    <div>
-      <p>gfgfgfgdf</p>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </div>
+    <ContactContainer>
+      <TitleContainer>
+        <Title>How to contact me</Title>
+      </TitleContainer>
+      <Wrapper>
+        <Contact></Contact>
+        <Contact></Contact>
+        <Contact></Contact>
+        <Contact></Contact>
+        <Contact></Contact>
+        <Contact></Contact>
+      </Wrapper>
+    </ContactContainer>
   );
 };
 

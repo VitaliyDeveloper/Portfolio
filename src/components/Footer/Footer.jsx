@@ -5,6 +5,8 @@ import {
   Link,
   Dot1,
   Dot2,
+  Text,
+  Copy,
 } from './Footer.styled';
 
 const Footer = () => {
@@ -32,7 +34,8 @@ const Footer = () => {
           </Link>
         </FooterItem>
       </FooterList>
-      <p>&copy; Vitaliy Gerassimov 2023</p>
+      <Text>Almaty, Kazakhstan</Text>
+      <Copy>&copy; Vitaliy Gerassimov 2023</Copy>
     </FooterContainer>
   );
 };

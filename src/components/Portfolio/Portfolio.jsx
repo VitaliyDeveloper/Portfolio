@@ -26,7 +26,7 @@ const Portfolio = ({ portfolio }) => {
             <Back className="back">
               <div className="center">
                 <SiteNameBack>{site.title}</SiteNameBack>
-                <Stack>{site.stack}</Stack>
+                <Stack>[ {site.stack} ]</Stack>
                 <Description>{site.description}</Description>
                 <Link href={site.url} target="_blank" rel="noopener noreferrer">
                   Go to site...

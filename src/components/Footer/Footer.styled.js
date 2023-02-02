@@ -4,7 +4,7 @@ export const FooterContainer = styled.div`
   position: relative;
   width: 100%;
   /* height: 50px; */
-  padding: 10px;
+  padding: 10px 0;
   text-align: center;
   background-color: var(--base-black);
   overflow: hidden;
@@ -78,4 +78,15 @@ export const Dot2 = styled.span`
       transform: rotate(360deg);
     }
   }
+`;
+
+export const Text = styled.p`
+  font-size: 12px;
+  color: var(--yellow-color);
+  padding: 0;
+`;
+
+export const Copy = styled.p`
+  font-size: 12px;
+  padding: 0;
 `;

@@ -7,7 +7,7 @@ export const NavigalionContainer = styled.div`
   width: 100%;
   height: 50px;
   background-color: var(--base-black);
-  padding: 15px;
+  padding: 15px 0;
   display: flex;
   justify-content: space-between;
   overflow: hidden;
@@ -60,11 +60,13 @@ export const NavList = styled.ul`
   display: flex;
   align-items: center;
   list-style: none;
-  padding: 0;
+  padding: 0 20px;
 `;
 
 export const NavItem = styled.li`
-  margin-right: 20px;
+  :not(:last-child) {
+    margin-right: 20px;
+  }
 `;
 
 export const NavLinkStyle = styled(NavLink)`

@@ -17,6 +17,8 @@ export const TitleName = styled.h1`
   font-size: 100px;
   margin: 0;
   color: var(--yellow-color);
+  text-shadow: 2px 2px 0 var(--red-color);
+
   padding: 0 20px;
   text-transform: uppercase;
 
@@ -41,7 +43,9 @@ export const TitleSurname = styled.h2`
   margin: 0;
   font-size: 70px;
   text-transform: uppercase;
+  pointer-events: none;
   color: var(--red-color);
+  text-shadow: 2px 2px 0 var(--yellow-color);
 
   animation: showUp 1500ms linear;
 
@@ -62,6 +66,7 @@ export const TitlePosition = styled.h3`
   padding: 20px 20px;
   margin: 0;
   font-size: 40px;
+  text-shadow: 2px 2px 0 var(--red-color);
 
   color: var(--yellow-color);
 
