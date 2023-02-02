@@ -2,21 +2,24 @@
     "portfolio": [
       {
         "title": "Phonebook",
-        "description": "Создание продающего и привлекающего внимание аккаунта Instagram",
+        "stack": "React, Redux, REST API, JWT, Material UI",
+        "description": "Personal project. A web app for contacts.Web application for save your contacts.",
         "imageUrl": "https://mini.s-shot.ru/1024x768/JPEG/1024/Z100/?https%3A%2F%2Fvitaliydeveloper.github.io%2FPhonebook%2F",
         "url": "https://vitaliydeveloper.github.io/Phonebook/",
         "id": "001"
       },
       {
         "title": "Movie reviews",
-        "description": "Создание продающего и привлекающего внимание аккаунта Instagram",
+        "stack": "React, REST API ",
+        "description": "Personal project. A web app with a responsive layout. Web application for viewing information about movies.",
         "imageUrl": "https://mini.s-shot.ru/1024x768/JPEG/1024/Z100/?https%3A%2F%2Fvitaliydeveloper.github.io%2FMovie-reviews%2F",
         "url": "https://vitaliydeveloper.github.io/Movie-reviews/",
         "id": "002"
       },
       {
         "title": "Website",
-        "description": "Консультации по всем направлениям фото и упаковке аккаунта Instagram",
+        "stack": " HTML5, CSS3, SASS",
+        "description": "Personal project. A website with a responsive layout.",
         "imageUrl": "https://mini.s-shot.ru/1024x768/JPEG/1024/Z100/?https%3A%2F%2Fvitaliydeveloper.github.io%2FWebStudio-sait%2F",
         "url": "https://vitaliydeveloper.github.io/WebStudio-sait/",
         "id": "003"

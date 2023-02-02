@@ -14,10 +14,22 @@ const Footer = () => {
       <Dot2></Dot2>
       <FooterList>
         <FooterItem>
-          <Link href="">GitHub</Link>
+          <Link
+            href="https://github.com/VitaliyDeveloper"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </Link>
         </FooterItem>
         <FooterItem>
-          <Link href="">Linkedin</Link>
+          <Link
+            href="https://www.linkedin.com/in/vitaliy-gerassimov-665255236/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Linkedin
+          </Link>
         </FooterItem>
       </FooterList>
       <p>&copy; Vitaliy Gerassimov 2023</p>

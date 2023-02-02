@@ -3,6 +3,7 @@ import {
   TitleContainer,
   TitleName,
   TitleSurname,
+  TitlePosition,
   Button,
 } from './Home.styled';
 
@@ -12,13 +13,9 @@ const Home = () => {
       <TitleContainer>
         <TitleName>Vitaliy</TitleName>
         <TitleSurname>Gerassimov</TitleSurname>
+        <TitlePosition>Frontend Developer</TitlePosition>
       </TitleContainer>
 
-      <ul>
-        <li>sd</li>
-        <li>ddsdf</li>
-        <li>aasfasf</li>
-      </ul>
       <Button>Let's go</Button>
     </HomeContainer>
   );

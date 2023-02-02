@@ -6,7 +6,11 @@ import {
   Link,
   ImageW,
   SiteName,
-  Side,
+  Front,
+  Back,
+  SiteNameBack,
+  Stack,
+  Description,
 } from './Portfolio.styled';
 
 const Portfolio = ({ portfolio }) => {
@@ -14,17 +18,21 @@ const Portfolio = ({ portfolio }) => {
     <PortfolioContainer>
       <PortfolioList>
         {portfolio.map(site => (
-          <PortfolioItem key={site.id}>
-            <div>
-              <Link href={site.url} target="_blank" rel="noopener noreferrer">
-                <ImageW className="hoverShow" src={site.imageUrl}></ImageW>
-              </Link>
+          <PortfolioItem className="center" key={site.id}>
+            <Front className="front">
+              <ImageW className="hoverShow" src={site.imageUrl}></ImageW>
               <SiteName className="hoverHide">{site.title}</SiteName>
-            </div>
-            <Side>
-              <SiteName>{site.title}</SiteName>
-              <p>{site.description}</p>
-            </Side>
+            </Front>
+            <Back className="back">
+              <div className="center">
+                <SiteNameBack>{site.title}</SiteNameBack>
+                <Stack>{site.stack}</Stack>
+                <Description>{site.description}</Description>
+                <Link href={site.url} target="_blank" rel="noopener noreferrer">
+                  Go to site...
+                </Link>
+              </div>
+            </Back>
           </PortfolioItem>
         ))}
       </PortfolioList>

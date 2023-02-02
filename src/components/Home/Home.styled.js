@@ -9,6 +9,7 @@ export const TitleContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  margin: 50px;
 `;
 
 export const TitleName = styled.h1`
@@ -16,7 +17,7 @@ export const TitleName = styled.h1`
   font-size: 100px;
   margin: 0;
   color: var(--yellow-color);
-  padding: 20px;
+  padding: 0 20px;
   text-transform: uppercase;
 
   animation: showDown 1500ms linear;
@@ -36,7 +37,7 @@ export const TitleName = styled.h1`
 
 export const TitleSurname = styled.h2`
   text-align: right;
-  padding: 20px;
+  padding: 0 20px;
   margin: 0;
   font-size: 70px;
   text-transform: uppercase;
@@ -56,17 +57,28 @@ export const TitleSurname = styled.h2`
     }
   }
 `;
+export const TitlePosition = styled.h3`
+  text-align: right;
+  padding: 20px 20px;
+  margin: 0;
+  font-size: 40px;
 
-// export const Button = styled.button`
-//   margin-left: 45%;
-//   margin-right: auto;
-//   padding: 20px;
-//   border: none;
-//   color: var(--base-black);
-//   background-color: var(--yellow-color);
-//   cursor: pointer;
-//   box-shadow: -10px 10px 0 var(--red-color);
-// `;
+  color: var(--yellow-color);
+
+  animation: showUp 1500ms linear;
+
+  @keyframes showUp {
+    0% {
+      transform: translate(0px, -120%);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translate(0px, 0px);
+      opacity: 1;
+    }
+  }
+`;
 
 export const Button = styled.button`
   margin-left: 45%;
@@ -79,6 +91,7 @@ export const Button = styled.button`
   border-radius: 0.75em;
   transition: transform 0.15s;
   transform-style: preserve-3d;
+  cursor: pointer;
 
   ::before {
     position: absolute;
