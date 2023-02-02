@@ -1,5 +1,7 @@
 import {
   HomeContainer,
+  Container,
+  MyPhoto,
   TitleContainer,
   TitleName,
   TitleSurname,
@@ -10,11 +12,14 @@ import {
 const Home = () => {
   return (
     <HomeContainer>
-      <TitleContainer>
-        <TitleName>Vitaliy</TitleName>
-        <TitleSurname>Gerassimov</TitleSurname>
-        <TitlePosition>Frontend Developer</TitlePosition>
-      </TitleContainer>
+      <Container>
+        <MyPhoto></MyPhoto>
+        <TitleContainer>
+          <TitleName>Vitaliy</TitleName>
+          <TitleSurname>Gerassimov</TitleSurname>
+          <TitlePosition>Frontend Developer</TitlePosition>
+        </TitleContainer>
+      </Container>
 
       <Button>Let's go</Button>
     </HomeContainer>

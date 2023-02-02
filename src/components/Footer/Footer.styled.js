@@ -39,7 +39,7 @@ export const Link = styled.a`
 
 export const Dot1 = styled.span`
   position: absolute;
-  top: 0;
+  top: 10px;
   width: 10px;
   height: 10px;
   background-color: var(--red-color);
@@ -59,7 +59,7 @@ export const Dot1 = styled.span`
 `;
 export const Dot2 = styled.span`
   position: absolute;
-  top: 0;
+  top: 10px;
   left: 0;
   width: 10px;
   height: 10px;

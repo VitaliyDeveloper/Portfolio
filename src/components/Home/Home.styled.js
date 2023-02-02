@@ -1,7 +1,55 @@
 import styled from 'styled-components';
+import myPhoto from '../../img/i.jpg';
 
 export const HomeContainer = styled.div`
   width: 100%;
+  /* display: flex; */
+`;
+
+export const Container = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+`;
+
+export const MyPhoto = styled.div`
+  position: block;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-image: url(${myPhoto});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  ::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    transition: 500ms linear;
+    animation: pulser 1000ms linear infinite;
+
+    @keyframes pulser {
+      0% {
+        background-color: var(--red-color);
+        scale: 1;
+      }
+      25% {
+        background-color: var(--red-color);
+        scale: 1.1;
+      }
+      50% {
+        background-color: var(--yellow-color);
+        scale: 1.2;
+      }
+      100% {
+        background-color: var(--red-color);
+
+        scale: 1;
+      }
+    }
+  }
 `;
 
 export const TitleContainer = styled.div`
