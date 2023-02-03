@@ -3,17 +3,27 @@ import myPhoto from '../../img/i.jpg';
 
 export const HomeContainer = styled.div`
   width: 100%;
+
   /* display: flex; */
 `;
 
 export const Container = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  height: 80vh;
+`;
+
+export const AvatarContainer = styled.div`
+  width: 300px;
+  height: 300px;
+  position: relative;
 `;
 
 export const MyPhoto = styled.div`
-  position: block;
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 300px;
   height: 300px;
   border-radius: 50%;
@@ -21,33 +31,37 @@ export const MyPhoto = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  ::before {
-    content: '';
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    transition: 500ms linear;
-    animation: pulser 1000ms linear infinite;
+  z-index: 9;
+`;
 
-    @keyframes pulser {
-      0% {
-        background-color: var(--red-color);
-        scale: 1;
-      }
-      25% {
-        background-color: var(--red-color);
-        scale: 1.1;
-      }
-      50% {
-        background-color: var(--yellow-color);
-        scale: 1.2;
-      }
-      100% {
-        background-color: var(--red-color);
+export const PulserContainer = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  transition: 500ms linear;
 
-        scale: 1;
-      }
+  animation: pulser 1500ms linear infinite;
+
+  @keyframes pulser {
+    0% {
+      background-color: var(--red-color);
+      scale: 1;
+    }
+    25% {
+      background-color: var(--red-color);
+      scale: 1.1;
+    }
+    50% {
+      background-color: var(--yellow-color);
+      scale: 1.2;
+    }
+    100% {
+      background-color: var(--red-color);
+
+      scale: 1;
     }
   }
 `;
@@ -134,7 +148,7 @@ export const TitlePosition = styled.h3`
 `;
 
 export const Button = styled.button`
-  margin-left: 45%;
+  margin: 20px;
   font-weight: 600;
   color: var(--base-black);
   text-transform: uppercase;
@@ -145,6 +159,16 @@ export const Button = styled.button`
   transition: transform 0.15s;
   transform-style: preserve-3d;
   cursor: pointer;
+  animation: show 1000ms linear;
+
+  @keyframes show {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
   ::before {
     position: absolute;

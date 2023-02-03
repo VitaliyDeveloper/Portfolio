@@ -1,30 +1,41 @@
 import styled from 'styled-components';
 import {
-  BsGithub,
+  // BsGithub,
   BsFillTelephoneInboundFill,
   BsMailbox,
   BsLinkedin,
+  BsWhatsapp,
 } from 'react-icons/bs';
 
-export const IconGitHub = styled(BsGithub)`
-  transition: 300ms linear;
-
-  /* fill: var(--red-color); */
-`;
+// export const IconGitHub = styled(BsGithub)`
+//   transition: 300ms linear;
+//   margin-bottom: 10px;
+//   /* fill: var(--red-color); */
+// `;
 
 export const IconPhone = styled(BsFillTelephoneInboundFill)`
   transition: 300ms linear;
+  margin-bottom: 10px;
 
   /* fill: var(--red-color); */
 `;
 
 export const IconMail = styled(BsMailbox)`
   transition: 300ms linear;
+  margin-bottom: 10px;
 
   /* fill: var(--red-color); */
 `;
 export const IconLinkedin = styled(BsLinkedin)`
   transition: 300ms linear;
+  margin-bottom: 10px;
+
+  /* fill: var(--red-color); */
+`;
+
+export const IconWhatsapp = styled(BsWhatsapp)`
+  transition: 300ms linear;
+  margin-bottom: 20px;
 
   /* fill: var(--red-color); */
 `;
@@ -95,9 +106,42 @@ export const TitleContainer = styled.div`
 export const Wrapper = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-  margin-top: 30px;
+  grid-template-columns: 1fr, 1fr, 1fr;
+  /* grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); */
+  align-items: center;
+  grid-template-areas:
+    'main tel whatsApp'
+    'main linkedin mail';
+  /* justify-items: center; */
+  margin: 30px;
+
+  .main {
+    grid-area: main;
+  }
+  .tel {
+    grid-area: tel;
+  }
+  .whatsApp {
+    grid-area: whatsApp;
+  }
+  .linkedin {
+    grid-area: linkedin;
+  }
+  .mail {
+    grid-area: mail;
+  }
+`;
+
+export const MainContact = styled.div`
+  width: 400px;
+  height: 400px;
+  background-color: var(--yellow-color);
+  transition: 300ms linear;
+
+  :hover {
+    box-shadow: -10px -10px 0 var(--red-color);
+    scale: 1.1;
+  }
 `;
 
 export const Link = styled.a`
@@ -106,6 +150,10 @@ export const Link = styled.a`
   font-size: 20px;
   width: 200px;
   margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 `;
 
 export const Contact = styled.div`
@@ -139,15 +187,11 @@ export const Contact = styled.div`
   :hover .dsongentom {
     display: block;
     position: relative;
-    /* top: 50%; */
-    /* width: 30em; */
     margin: 0 auto;
     border-right: 2px solid rgba(255, 255, 255, 0.75);
-    /* font-size: 50%; */
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
-    /* transform: translateY(-50%); */
   }
 
   :hover .desetungavon {

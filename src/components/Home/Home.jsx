@@ -7,21 +7,25 @@ import {
   TitleSurname,
   TitlePosition,
   Button,
+  AvatarContainer,
+  PulserContainer,
 } from './Home.styled';
 
 const Home = () => {
   return (
     <HomeContainer>
       <Container>
-        <MyPhoto></MyPhoto>
+        <AvatarContainer>
+          <MyPhoto></MyPhoto>
+          <PulserContainer></PulserContainer>
+        </AvatarContainer>
         <TitleContainer>
           <TitleName>Vitaliy</TitleName>
           <TitleSurname>Gerassimov</TitleSurname>
           <TitlePosition>Frontend Developer</TitlePosition>
+          <Button>Let's go</Button>
         </TitleContainer>
       </Container>
-
-      <Button>Let's go</Button>
     </HomeContainer>
   );
 };

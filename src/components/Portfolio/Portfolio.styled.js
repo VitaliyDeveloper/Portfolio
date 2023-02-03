@@ -7,7 +7,7 @@ export const PortfolioContainer = styled.div`
 `;
 
 export const PortfolioList = styled.ul`
-  margin-top: 15%;
+  margin-top: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,8 +22,8 @@ export const PortfolioItem = styled.li`
   margin: 10px 20px;
   background-color: var(--base-black);
   /* box-shadow: 10px 10px 0 var(--red-color); */
-
-  animation: bounce 2000ms ease;
+  /* 
+  animation: bounce 2000ms ease 200ms;
 
   @keyframes bounce {
     0% {
@@ -53,7 +53,7 @@ export const PortfolioItem = styled.li`
     100% {
       transform: scale(1, 1) translateY(0);
     }
-  }
+  } */
 
   transition: 300ms ease-in-out;
 
