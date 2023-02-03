@@ -1,6 +1,10 @@
 //STYLES/////////////////////////
 import {
   PortfolioContainer,
+  TitleContainer,
+  Title,
+  LeftTitle,
+  RightTitle,
   PortfolioList,
   PortfolioItem,
   Link,
@@ -16,6 +20,12 @@ import {
 const Portfolio = ({ portfolio }) => {
   return (
     <PortfolioContainer>
+      <TitleContainer>
+        <Title>
+          <LeftTitle className="left">MY</LeftTitle>{' '}
+          <RightTitle className="right">WORK</RightTitle>
+        </Title>
+      </TitleContainer>
       <PortfolioList>
         {portfolio.map(site => (
           <PortfolioItem className="center" key={site.id}>

@@ -1,43 +1,28 @@
 import styled from 'styled-components';
 import {
-  // BsGithub,
   BsFillTelephoneInboundFill,
   BsMailbox,
   BsLinkedin,
   BsWhatsapp,
 } from 'react-icons/bs';
 
-// export const IconGitHub = styled(BsGithub)`
-//   transition: 300ms linear;
-//   margin-bottom: 10px;
-//   /* fill: var(--red-color); */
-// `;
-
 export const IconPhone = styled(BsFillTelephoneInboundFill)`
   transition: 300ms linear;
   margin-bottom: 10px;
-
-  /* fill: var(--red-color); */
 `;
 
 export const IconMail = styled(BsMailbox)`
   transition: 300ms linear;
   margin-bottom: 10px;
-
-  /* fill: var(--red-color); */
 `;
 export const IconLinkedin = styled(BsLinkedin)`
   transition: 300ms linear;
   margin-bottom: 10px;
-
-  /* fill: var(--red-color); */
 `;
 
 export const IconWhatsapp = styled(BsWhatsapp)`
   transition: 300ms linear;
   margin-bottom: 20px;
-
-  /* fill: var(--red-color); */
 `;
 
 export const ContactContainer = styled.div`
@@ -75,7 +60,6 @@ export const TitleContainer = styled.div`
   margin-right: auto;
   width: fit-content;
   padding-bottom: 15px;
-  /* overflow: hidden; */
 
   ::after {
     content: '';
@@ -107,12 +91,10 @@ export const Wrapper = styled.div`
   width: 100%;
   display: grid;
   grid-template-columns: 1fr, 1fr, 1fr;
-  /* grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); */
   align-items: center;
   grid-template-areas:
     'main tel whatsApp'
     'main linkedin mail';
-  /* justify-items: center; */
   margin: 30px;
 
   .main {
@@ -144,6 +126,72 @@ export const MainContact = styled.div`
   }
 `;
 
+export const TitleColorDesc = styled.h3`
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px 0 0 0;
+  text-align: center;
+  color: #ffff;
+  font-size: 30px;
+
+  background: linear-gradient(
+    219deg,
+    var(--color-1) 19%,
+    var(--color-2) 20%,
+    var(--color-2) 39%,
+    var(--color-3) 40%,
+    var(--color-3) 59%,
+    var(--color-4) 60%,
+    var(--color-4) 79%,
+    var(--color-5) 80%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+`;
+
+export const Co = styled.div`
+  max-height: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  cursor: grab;
+  padding: 10px;
+
+  .square {
+    width: 20px;
+    height: 20px;
+    background: var(--yellow-color);
+    opacity: 0.8;
+    margin: 2px;
+    font-size: 0;
+    box-shadow: 0 0 2px #000;
+    transition: 1500ms ease;
+    /* border-radius: 50%; */
+    border: none;
+    cursor: grab;
+  }
+
+  .square:hover {
+    transition-duration: 0s;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 50% 100%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
+`;
+
 export const Link = styled.a`
   text-decoration: none;
   color: var(--base-black);
@@ -162,8 +210,8 @@ export const Contact = styled.div`
   align-items: center;
   flex-direction: column;
   margin: 20px;
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   background-color: var(--yellow-color);
   transition: 300ms linear;
 
@@ -203,7 +251,7 @@ export const Contact = styled.div`
       width: 0;
     }
     to {
-      width: 180px;
+      width: 160px;
     }
   }
   @keyframes blinkTextCursor {

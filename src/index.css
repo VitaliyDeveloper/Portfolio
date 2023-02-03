@@ -8,11 +8,17 @@
   --red-color: #E32322;
   --base-black: #282c34;
   --white-color: #fff;
+  --color-1: #186cb8;
+  --color-2: #2a9a9f;
+  --color-3: #f1b211;
+  --color-4: #e83611;
+  --color-5: #f9002f;
 }
 
 body {
   margin: 0;
   background-color: var(--base-black);
+  box-sizing: border-box;
 
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
