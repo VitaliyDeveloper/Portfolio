@@ -6,19 +6,18 @@ export const PortfolioContainer = styled.div`
   padding: 20px;
 `;
 
-export const Title = styled.h2`
+export const Title = styled.div`
   text-align: center;
   padding: 0 20px;
   margin: 0;
   font-size: 70px;
+  font-weight: bold;
+  display: flex;
   text-transform: uppercase;
   color: var(--red-color);
   text-shadow: 2px 2px 0 var(--yellow-color);
   pointer-events: none;
-`;
-
-export const LeftTitle = styled.span`
-  /* transition: 500ms linear; */
+  /* 
   animation: showDown 1500ms linear;
 
   @keyframes showDown {
@@ -31,15 +30,32 @@ export const LeftTitle = styled.span`
       transform: translate(0px, 0px);
       opacity: 1;
     }
+  } */
+`;
+
+export const LeftTitle = styled.p`
+  margin: 20px;
+  animation: showaDown 1000ms linear;
+
+  @keyframes showaDown {
+    0% {
+      transform: translate(120%, 0px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translate(0px, 0px);
+      opacity: 1;
+    }
   }
 `;
-export const RightTitle = styled.span`
-  /* transition: 500ms linear; */
-  animation: showDown 1500ms linear;
+export const RightTitle = styled.p`
+  margin-bottom: 20px;
+  animation: showssDown 1000ms linear;
 
-  @keyframes showDown {
+  @keyframes showssDown {
     0% {
-      transform: translate(0px, 120%);
+      transform: translate(-120%, 0px);
       opacity: 0;
     }
 
@@ -84,7 +100,7 @@ export const TitleContainer = styled.div`
 `;
 
 export const PortfolioList = styled.ul`
-  margin-top: 10%;
+  margin-top: 5%;
   display: flex;
   align-items: center;
   justify-content: center;
