@@ -4,6 +4,7 @@ import {
   BsMailbox,
   BsLinkedin,
   BsWhatsapp,
+  BsFillForwardFill,
 } from 'react-icons/bs';
 
 export const IconPhone = styled(BsFillTelephoneInboundFill)`
@@ -23,6 +24,10 @@ export const IconLinkedin = styled(BsLinkedin)`
 export const IconWhatsapp = styled(BsWhatsapp)`
   transition: 300ms linear;
   margin-bottom: 20px;
+`;
+
+export const IconArrow = styled(BsFillForwardFill)`
+  margin-left: 50%;
 `;
 
 export const ContactContainer = styled.div`
@@ -88,14 +93,17 @@ export const TitleContainer = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  width: 100%;
+  position: relative;
+  /* width: 100%; */
   display: grid;
+  gap: 20px;
+  justify-content: center;
   grid-template-columns: 1fr, 1fr, 1fr;
   align-items: center;
   grid-template-areas:
     'main tel whatsApp'
     'main linkedin mail';
-  margin: 30px;
+  margin: 20px;
 
   .main {
     grid-area: main;
@@ -114,6 +122,14 @@ export const Wrapper = styled.div`
   }
 `;
 
+export const AboutMe = styled.p`
+  position: absolute;
+  font-size: 23px;
+  margin: 20px;
+  width: 360px;
+  /* top: 0; */
+`;
+
 export const MainContact = styled.div`
   width: 400px;
   height: 400px;
@@ -123,6 +139,24 @@ export const MainContact = styled.div`
   :hover {
     box-shadow: -10px -10px 0 var(--red-color);
     scale: 1.1;
+  }
+
+  :hover .hover {
+    fill: var(--red-color);
+
+    animation: move 1000ms linear infinite alternate;
+
+    @keyframes move {
+      0% {
+        transform: translate(0px, 0px);
+        /* opacity: 0; */
+      }
+
+      100% {
+        transform: translate(50%, 0px);
+        /* opacity: 1; */
+      }
+    }
   }
 `;
 
@@ -150,7 +184,7 @@ export const TitleColorDesc = styled.h3`
   color: transparent;
 `;
 
-export const Co = styled.div`
+export const Cube = styled.div`
   max-height: 100%;
   max-width: 100%;
   display: flex;

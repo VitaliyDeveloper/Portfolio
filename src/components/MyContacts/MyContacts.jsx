@@ -5,14 +5,16 @@ import {
   TitleContainer,
   Title,
   Wrapper,
+  AboutMe,
   MainContact,
   Contact,
   IconPhone,
   IconMail,
   IconLinkedin,
   IconWhatsapp,
+  IconArrow,
   Link,
-  Co,
+  Cube,
   TitleColorDesc,
 } from './MyContacts.styled';
 
@@ -57,12 +59,21 @@ const MyContacts = () => {
   return (
     <ContactContainer>
       <TitleContainer>
-        <Title>How to contact me</Title>
+        <Title>A little about me</Title>
       </TitleContainer>
       <Wrapper>
         <MainContact className="main">
-          <TitleColorDesc>Color desc</TitleColorDesc>
-          <Co className="container" id="board">
+          <TitleColorDesc>About me</TitleColorDesc>
+          <AboutMe>
+            Hello! <br />
+            My name is Vitaliy. <br />I am a Frontend Developer I still don’t
+            know how much, but I’m learning and striving to develop in this
+            direction. <br />
+            If you are interested in my work, you can contact me at the
+            following contacts... <br />
+            <IconArrow className="hover" size="100" />
+          </AboutMe>
+          <Cube className="container" id="board">
             {cubes.map(cub => (
               <div
                 key={nanoid()}
@@ -73,9 +84,8 @@ const MyContacts = () => {
                 {cub}
               </div>
             ))}
-          </Co>
+          </Cube>
         </MainContact>
-
         <Contact className="tel">
           <Link
             href="tel:+77777777777"
