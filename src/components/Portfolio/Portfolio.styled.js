@@ -2,8 +2,9 @@ import styled from 'styled-components';
 
 export const PortfolioContainer = styled.div`
   height: 100%;
-  width: 100%;
+  /* width: 100%; */
   padding: 20px;
+  overflow: auto;
 `;
 
 export const Title = styled.div`
@@ -100,8 +101,11 @@ export const TitleContainer = styled.div`
 `;
 
 export const PortfolioList = styled.ul`
+  width: 100%;
+  margin: 0;
   margin-top: 5%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   list-style: none;
@@ -110,9 +114,9 @@ export const PortfolioList = styled.ul`
 
 export const PortfolioItem = styled.li`
   position: relative;
-  width: 300px;
-  height: 250px;
-  margin: 10px 20px;
+  width: 280px;
+  height: 230px;
+  margin: 20px;
   background-color: var(--base-black);
   /* box-shadow: 10px 10px 0 var(--red-color); */
   /* 
@@ -196,8 +200,8 @@ export const PortfolioItem = styled.li`
 export const Link = styled.a``;
 
 export const ImageW = styled.img`
-  width: 300px;
-  height: 250px;
+  width: 280px;
+  height: 230px;
   /* opacity: 50%; */
   transition: 300ms ease-in-out;
 `;
