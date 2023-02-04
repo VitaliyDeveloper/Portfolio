@@ -17,6 +17,14 @@
         "id": "002"
       },
       {
+        "title": "Website-IceCream",
+        "stack": " HTML5, CSS3, SASS",
+        "description": "Command projects. A website with a responsive layout. Role: Developer (review slider). Build project on github, check for build errors and live page performance. ",
+        "imageUrl": "https://mini.s-shot.ru/1024x768/JPEG/1024/Z100/?https%3A%2F%2Fyanazavodovskaya.github.io%2Fgoit-ice-cream-project%2F",
+        "url": "https://yanazavodovskaya.github.io/goit-ice-cream-project/",
+        "id": "003"
+      },
+      {
         "title": "Website",
         "stack": " HTML5, CSS3, SASS",
         "description": "Personal project. A website with a responsive layout.",
@@ -24,5 +32,7 @@
         "url": "https://vitaliydeveloper.github.io/WebStudio-sait/",
         "id": "003"
       }
+
+      
     ]
   }
