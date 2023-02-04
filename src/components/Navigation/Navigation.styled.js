@@ -7,10 +7,10 @@ export const NavigalionContainer = styled.div`
   width: 100%;
   height: 50px;
   background-color: var(--base-black);
-  padding: 15px 0;
+  /* padding: 15px 0; */
   display: flex;
   justify-content: space-between;
-  overflow: hidden;
+  /* overflow: hidden; */
 `;
 
 export const Dot1 = styled.span`
@@ -24,11 +24,11 @@ export const Dot1 = styled.span`
 
   @keyframes dotLeft {
     0% {
-      left: 110%;
+      left: 100%;
       transform: rotate(0deg);
     }
     100% {
-      left: -10%;
+      left: 0%;
       transform: rotate(360deg);
     }
   }
@@ -46,11 +46,11 @@ export const Dot2 = styled.span`
 
   @keyframes dotRight {
     0% {
-      left: -10%;
+      left: 0%;
       transform: rotate(0deg);
     }
     100% {
-      left: 110%;
+      left: 100%;
       transform: rotate(360deg);
     }
   }
@@ -85,9 +85,49 @@ export const NavLinkStyle = styled(NavLink)`
   }
 `;
 
+//submenu//////////////////////////////////////
+export const NavItemTopMenu = styled.li`
+  position: relative;
+  :hover .submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: perspective(600px) rotateX(0deg);
+  }
+`;
+export const Menu = styled.div`
+  padding: 5px;
+  background-color: var(--yellow-color);
+  color: var(--base-black);
+  transition: color 500ms ease;
+
+  &:hover {
+    color: var(--red-color);
+  }
+`;
+
+export const NavListSubmenu = styled.ul`
+  list-style: none;
+  padding: 0 20px;
+  background: var(--yellow-color);
+  position: absolute;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 5;
+  min-width: 150px;
+  /* min-height: 100px; */
+  transform: perspective(600px) rotateX(-90deg);
+  transform-origin: 0% 0%;
+  transition: 0.6s ease-in-out;
+`;
+
+export const NavItemSubmenu = styled.li`
+  margin: 10px 0 10px 0;
+`;
+
 export const Link = styled.a`
   text-decoration: none;
-  color: var(--yellow-color);
+  color: var(--base-black);
   transition: color 500ms ease;
 
   &:hover {
