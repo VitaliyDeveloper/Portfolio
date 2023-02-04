@@ -1,5 +1,8 @@
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
+import { BsFillHouseFill } from 'react-icons/bs';
+
+export const IconHome = styled(BsFillHouseFill)``;
 
 export const NavigalionContainer = styled.div`
   position: relative;
@@ -24,11 +27,11 @@ export const Dot1 = styled.span`
 
   @keyframes dotLeft {
     0% {
-      left: 100%;
+      left: 98%;
       transform: rotate(0deg);
     }
     100% {
-      left: 0%;
+      left: 2%;
       transform: rotate(360deg);
     }
   }
@@ -46,11 +49,11 @@ export const Dot2 = styled.span`
 
   @keyframes dotRight {
     0% {
-      left: 0%;
+      left: 2%;
       transform: rotate(0deg);
     }
     100% {
-      left: 100%;
+      left: 98%;
       transform: rotate(360deg);
     }
   }
@@ -74,6 +77,7 @@ export const NavLinkStyle = styled(NavLink)`
   font-size: 20px;
   color: var(--white-color);
   transition: color 500ms solid ease;
+  align-items: center;
 
   &:hover,
   :focus {

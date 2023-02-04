@@ -133,18 +133,6 @@ export const TitlePosition = styled.h3`
   color: var(--yellow-color);
 
   animation: showUp 1500ms linear;
-
-  @keyframes showUp {
-    0% {
-      transform: translate(0px, -120%);
-      opacity: 0;
-    }
-
-    100% {
-      transform: translate(0px, 0px);
-      opacity: 1;
-    }
-  }
 `;
 
 export const Button = styled.button`
@@ -159,16 +147,17 @@ export const Button = styled.button`
   transition: transform 0.15s;
   transform-style: preserve-3d;
   cursor: pointer;
-  animation: show 1000ms linear;
 
-  @keyframes show {
+  /* animation: showUp 1000ms linear; */
+
+  /* @keyframes show {
     0% {
       opacity: 0;
     }
     100% {
       opacity: 1;
     }
-  }
+  } */
 
   ::before {
     position: absolute;

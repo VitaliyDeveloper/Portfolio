@@ -1,4 +1,5 @@
 import {
+  IconHome,
   NavigalionContainer,
   NavList,
   NavItemTopMenu,
@@ -17,7 +18,9 @@ const Navigation = () => {
     <NavigalionContainer>
       <NavList>
         <NavItem>
-          <NavLinkStyle to="/">Home</NavLinkStyle>
+          <NavLinkStyle to="/">
+            <IconHome /> Home
+          </NavLinkStyle>
         </NavItem>
         <NavItem>
           <NavLinkStyle to="/mycontacts">AboutMe</NavLinkStyle>
