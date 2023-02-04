@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import myPhoto from '../../img/i.jpg';
+// import myPhoto from '../../img/me.jpg';
+import myPhoto from '../../img/ssss.jpg';
 
 export const HomeContainer = styled.div`
   width: 100%;

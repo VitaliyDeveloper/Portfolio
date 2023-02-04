@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import lastic from '../../img/lastic.png';
 import {
   BsFillTelephoneInboundFill,
   BsMailbox,
@@ -135,6 +136,7 @@ export const MainContact = styled.div`
   height: 400px;
   background-color: var(--yellow-color);
   transition: 300ms linear;
+  cursor: grab;
 
   :hover {
     box-shadow: -10px -10px 0 var(--red-color);
@@ -193,6 +195,8 @@ export const Cube = styled.div`
   align-items: center;
   max-width: 500px;
   cursor: grab;
+  /* cursor: url(${lastic}), auto; */
+
   padding: 10px;
 
   .square {
@@ -206,7 +210,8 @@ export const Cube = styled.div`
     transition: 1500ms ease;
     /* border-radius: 50%; */
     border: none;
-    cursor: grab;
+    cursor: grabbing;
+    /* cursor: url(${lastic}), auto; */
   }
 
   .square:hover {

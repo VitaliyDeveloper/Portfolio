@@ -252,5 +252,6 @@ export const Stack = styled.p`
 
 export const Description = styled.p`
   color: #727272;
+  font-size: 12px;
   pointer-events: none;
 `;
