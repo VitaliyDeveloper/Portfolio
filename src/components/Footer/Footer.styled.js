@@ -48,11 +48,11 @@ export const Dot1 = styled.span`
 
   @keyframes dotLeft {
     0% {
-      left: 100%;
+      left: 95%;
       transform: rotate(0deg);
     }
     100% {
-      left: 0%;
+      left: 5%;
       transform: rotate(360deg);
     }
   }
@@ -70,11 +70,11 @@ export const Dot2 = styled.span`
 
   @keyframes dotRight {
     0% {
-      left: 0%;
+      left: 5%;
       transform: rotate(0deg);
     }
     100% {
-      left: 100%;
+      left: 95%;
       transform: rotate(360deg);
     }
   }
