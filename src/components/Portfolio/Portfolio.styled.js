@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const PortfolioContainer = styled.div`
   height: 100%;
-  /* width: 100%; */
   padding: 20px;
   overflow: auto;
 `;
@@ -18,20 +17,6 @@ export const Title = styled.div`
   color: var(--red-color);
   text-shadow: 2px 2px 0 var(--yellow-color);
   pointer-events: none;
-  /* 
-  animation: showDown 1500ms linear;
-
-  @keyframes showDown {
-    0% {
-      transform: translate(0px, 120%);
-      opacity: 0;
-    }
-
-    100% {
-      transform: translate(0px, 0px);
-      opacity: 1;
-    }
-  } */
 `;
 
 export const LeftTitle = styled.p`
@@ -116,7 +101,7 @@ export const PortfolioItem = styled.li`
   position: relative;
   width: 280px;
   height: 230px;
-  margin: 20px;
+  margin: 30px;
   background-color: var(--base-black);
   /* box-shadow: 10px 10px 0 var(--red-color); */
   /* 
@@ -202,7 +187,6 @@ export const Link = styled.a``;
 export const ImageW = styled.img`
   width: 280px;
   height: 230px;
-  /* opacity: 50%; */
   transition: 300ms ease-in-out;
 `;
 
