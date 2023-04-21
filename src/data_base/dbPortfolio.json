@@ -1,45 +1,51 @@
 {
-    "portfolio": [
-      {
-        "title": "Phonebook",
-        "stack": "React, Redux, REST API, JWT, Material UI",
-        "description": "Personal project. A web app for contacts.Web application for save your contacts.",
-        "imageUrl": "https://mini.s-shot.ru/1024x768/JPEG/1024/Z100/?https%3A%2F%2Fvitaliydeveloper.github.io%2FPhonebook%2F",
-        "url": "https://vitaliydeveloper.github.io/Phonebook/",
-        "id": "001"
-      },
-      {
-        "title": "Movie reviews",
-        "stack": "React, REST API ",
-        "description": "Personal project. A web app with a responsive layout. Web application for viewing information about movies.",
-        "imageUrl": "https://mini.s-shot.ru/1024x768/JPEG/1024/Z100/?https%3A%2F%2Fvitaliydeveloper.github.io%2FMovie-reviews%2F",
-        "url": "https://vitaliydeveloper.github.io/Movie-reviews/",
-        "id": "002"
-      },
-      {
-        "title": "Website-IceCream",
-        "stack": " HTML5, CSS3, SASS",
-        "description": "Command projects. A website with a responsive layout. Role: Developer (review slider). Build project on github, check for build errors and live page performance. ",
-        "imageUrl": "https://mini.s-shot.ru/1024x768/JPEG/1024/Z100/?https%3A%2F%2Fyanazavodovskaya.github.io%2Fgoit-ice-cream-project%2F",
-        "url": "https://yanazavodovskaya.github.io/goit-ice-cream-project/",
-        "id": "003"
-      },
-      {
-        "title": "Website",
-        "stack": " HTML5, CSS3, SASS",
-        "description": "Personal project. A website with a responsive layout.",
-        "imageUrl": "https://mini.s-shot.ru/1024x768/JPEG/1024/Z100/?https%3A%2F%2Fvitaliydeveloper.github.io%2FWebStudio-sait%2F",
-        "url": "https://vitaliydeveloper.github.io/WebStudio-sait/",
-        "id": "003"
-      },
-      {
-        "title": "Mini-games",
-        "stack": " HTML5, CSS3, JavaScript",
-        "imageUrl": "https://mini.s-shot.ru/1024x768/JPEG/1024/Z100/?https%3A%2F%2Fvitaliydeveloper.github.io%2FMimi-games-js%2Findex.html",
-        "url": "https://vitaliydeveloper.github.io/Mimi-games-js/index.html",
-        "id": "004"
-      }
-
-      
-    ]
-  }
+  "portfolio": [
+    {
+      "title": "Wallet",
+      "stack": "React, Redux, Node.js, REST API, JWT, Material UI",
+      "description": "Command projects. A website with a responsive layout. Role: Frontend Developer (table and all logic for this component). Build project on github, check for build errors and live page performance. ",
+      "imageUrl": "https://mini.s-shot.ru/1024x768/JPEG/1024/Z100/?https%3A%2F%2Fvitaliydeveloper.github.io%2FPhonebook%2F",
+      "url": "https://dsimonaits.github.io/wallet-team-project-client-side/",
+      "id": "001"
+    },
+    {
+      "title": "Phonebook",
+      "stack": "React, Redux, REST API, JWT, Material UI",
+      "description": "Personal project. A web app for contacts.Web application for save your contacts.",
+      "imageUrl": "https://mini.s-shot.ru/1024x768/JPEG/1024/Z100/?https%3A%2F%2Fvitaliydeveloper.github.io%2FPhonebook%2F",
+      "url": "https://vitaliydeveloper.github.io/Phonebook/",
+      "id": "002"
+    },
+    {
+      "title": "Movie reviews",
+      "stack": "React, REST API ",
+      "description": "Personal project. A web app with a responsive layout. Web application for viewing information about movies.",
+      "imageUrl": "https://mini.s-shot.ru/1024x768/JPEG/1024/Z100/?https%3A%2F%2Fvitaliydeveloper.github.io%2FMovie-reviews%2F",
+      "url": "https://vitaliydeveloper.github.io/Movie-reviews/",
+      "id": "003"
+    },
+    {
+      "title": "Website-IceCream",
+      "stack": " HTML5, CSS3, SASS",
+      "description": "Command projects. A website with a responsive layout. Role: Developer (review slider). Build project on github, check for build errors and live page performance. ",
+      "imageUrl": "https://mini.s-shot.ru/1024x768/JPEG/1024/Z100/?https%3A%2F%2Fyanazavodovskaya.github.io%2Fgoit-ice-cream-project%2F",
+      "url": "https://yanazavodovskaya.github.io/goit-ice-cream-project/",
+      "id": "004"
+    },
+    {
+      "title": "Website",
+      "stack": " HTML5, CSS3, SASS",
+      "description": "Personal project. A website with a responsive layout.",
+      "imageUrl": "https://mini.s-shot.ru/1024x768/JPEG/1024/Z100/?https%3A%2F%2Fvitaliydeveloper.github.io%2FWebStudio-sait%2F",
+      "url": "https://vitaliydeveloper.github.io/WebStudio-sait/",
+      "id": "005"
+    },
+    {
+      "title": "Mini-games",
+      "stack": " HTML5, CSS3, JavaScript",
+      "imageUrl": "https://mini.s-shot.ru/1024x768/JPEG/1024/Z100/?https%3A%2F%2Fvitaliydeveloper.github.io%2FMimi-games-js%2Findex.html",
+      "url": "https://vitaliydeveloper.github.io/Mimi-games-js/index.html",
+      "id": "006"
+    }
+  ]
+}

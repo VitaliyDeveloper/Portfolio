@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import {
   HomeContainer,
   Container,
@@ -23,6 +24,7 @@ const Home = () => {
           <TitleName>Vitaliy</TitleName>
           <TitleSurname>Gerassimov</TitleSurname>
           <TitlePosition>Frontend Developer</TitlePosition>
+
           <Button>Let's go</Button>
         </TitleContainer>
       </Container>
