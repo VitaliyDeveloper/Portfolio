@@ -228,6 +228,7 @@ export const Back = styled.div`
 export const SiteNameBack = styled.h2`
   color: var(--red-color);
   pointer-events: none;
+  margin: 0;
 `;
 
 export const Stack = styled.p`
