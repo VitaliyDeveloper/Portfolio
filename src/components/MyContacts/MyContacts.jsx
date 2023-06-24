@@ -105,7 +105,7 @@ const MyContacts = () => {
             rel="noopener noreferrer"
           >
             <IconMail className="hover" size="100" />
-            <p className="desetungavon dsongentom hoverLink">
+            <p className="desetungavon dsongentom hoverLink textmail">
               gerassimov.developer@gmail.com
             </p>
           </Link>

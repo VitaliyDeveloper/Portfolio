@@ -254,6 +254,10 @@ export const Contact = styled.div`
   background-color: var(--yellow-color);
   transition: 300ms linear;
 
+  .textmail {
+    font-size: 10px;
+  }
+
   :hover {
     box-shadow: -10px -10px 0 var(--red-color);
     scale: 1.1;
